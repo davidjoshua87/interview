@@ -72,7 +72,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Front-End Developer
+          Front-End Developer &copy;{new Date().getFullYear()}
         </a>
       </footer>
     </div>

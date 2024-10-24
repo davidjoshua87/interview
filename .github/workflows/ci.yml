@@ -1,0 +1,35 @@
+name: CI Build
+
+# Trigger workflow on push or pull request
+on:
+  push:
+    branches:
+      - main # atau cabang lain yang kamu inginkan
+  pull_request:
+    branches:
+      - main
+
+# Define the jobs to run
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Step to run the build process
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      # Set up Node.js (you can set a specific version)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run build script
+      - name: Run build
+        run: npm run build
