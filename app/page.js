@@ -11,8 +11,8 @@ export default function Home() {
     "Enhancing the UI and UX will also be considered an added value.",
     "Successfully deploying the project to the public will further increase the value.",
     "Before pushing to GitHub, ensure that everything is functioning correctly.",
-    "Don't forget to pray and good luck! :)"
-  ];  
+    "Don't forget to pray and good luck! :)",
+  ];
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -20,7 +20,7 @@ export default function Home() {
         <h1 className="font-bold text-4xl">Technical Test</h1>
         <h2 className="text-2xl underline">Read First!</h2>
 
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside list-decimal text-sm text-left font-[family-name:var(--font-geist-mono)]">
           {questions.map((question, index) => (
             <li key={index} className="mb-2">
               {question}
