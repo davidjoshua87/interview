@@ -109,7 +109,9 @@ export default function Home() {
 const Post = () => {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
-      <h4 className="text-lg font-semibold text-gray-700">Frontend Developer</h4>
+      <h4 className="text-lg font-semibold text-gray-700">
+        Frontend Developer
+      </h4>
       <p className="h-24 overflow-hidden text-gray-700">
         In my journey as a frontend developer, I have encountered numerous
         challenges and invaluable lessons. From diving into the realms of HTML
@@ -136,19 +138,19 @@ const Modal = ({ onClose }) => {
   // Define your questions for each tab
   const questions = [
     [
-      "How to implement a function to create a new blog post whose submit button is only active when the title and content fields are filled in?",
-      "How to implement validation on form fields to ensure that the fields are filled in correctly and should not be left blank?",
-      "How to ensure that when a new blog post is created, the data is correctly added to the existing blog post list?",
+      "How can a function be implemented to create a new blog post, where the submit button is only active when both the title and content fields are filled in?",
+      "How can validation be added to form fields to ensure they are filled in correctly and not left blank?",
+      "How can we ensure that when a new blog post is created, the data is correctly added to the existing blog post list?",
     ],
     [
-      "How to implement a function to edit a blog post that has already been created?",
-      "How to get data from a blog post that is being edited is filled in the form field and when it has been filled in the form there will be 2 buttons, namely save and cancel?",
-      "How to ensure that edited blog post data will be visible in the blog post list when the save button is clicked and reset the edit if the cancel button is clicked?",
+      "How can a function be implemented to edit an existing blog post?",
+      "How can the data of a blog post being edited be pre-filled into the form fields, and ensure there are two buttons: save and cancel?",
+      "How can we ensure that the edited blog post data is updated in the blog post list when the save button is clicked, and the changes are discarded when the cancel button is clicked?",
     ],
     [
-      "How to implement a function to delete a blog post?",
-      "How to ensure that when a blog post is deleted, its data is deleted in the blog post list?",
-      "What if the blog post content is more than 4 lines?",
+      "How can a function be implemented to delete a blog post?",
+      "How can we ensure that when a blog post is deleted, it is removed from the blog post list?",
+      "What should be done if the blog post content exceeds 4 lines?",
     ],
   ];
 

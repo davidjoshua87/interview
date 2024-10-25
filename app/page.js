@@ -3,16 +3,16 @@ import Image from "next/image";
 export default function Home() {
   const questions = [
     "Read the question carefully.",
-    "Before answering, create a new branch in development; all work in the development branch, and push and merge to master/main.",
-    "Before committing, please pay attention and follow the commit method: feat: [your_name][#01][first-answer]",
-    "Write the answer code on the answer page.",
-    "If you don't understand, it's best to ask.",
-    "If you can make unit testing, it will be an added value.",
-    "If you can improve the UI and UX, it will be an added value.",
-    "If the project is successfully deployed to the public, it will be an added value.",
-    "Before pushing to GitHub, make sure everything is running.",
-    "Don't forget to pray and good luck :)",
-  ];
+    "Before answering, create a new branch in the development environment. Perform all work in this branch and only push and merge to the master/main branch when ready.",
+    "When committing, follow this commit format: feat: [your_name][#01][first-answer].",
+    "Write the solution code on the answer page.",
+    "If anything is unclear, feel free to ask for clarification.",
+    "If you can perform unit testing, it will be a bonus.",
+    "Enhancing the UI and UX will also be considered an added value.",
+    "Successfully deploying the project to the public will further increase the value.",
+    "Before pushing to GitHub, ensure that everything is functioning correctly.",
+    "Don't forget to pray and good luck! :)"
+  ];  
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
